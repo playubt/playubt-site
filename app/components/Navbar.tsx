@@ -6,7 +6,7 @@ export default function Navbar() {
           UBT
         </a>
 
-        <div className="hidden gap-8 text-sm font-bold uppercase tracking-wider md:flex">
+        <div className="flex flex-wrap justify-center gap-4 text-xs font-bold uppercase tracking-wider md:gap-8 md:text-sm">
           <a href="/" className="transition hover:text-red-500">
             Home
           </a>
