@@ -19,13 +19,19 @@ export default function Home() {
           </p>
 
           <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
-            <a className="rounded border border-red-600 bg-red-700 px-8 py-4 font-black uppercase tracking-widest hover:bg-red-600">
-              Enter Tournament
-            </a>
+           <a
+  href="/vote"
+  className="rounded border border-red-600 bg-red-700 px-8 py-4 font-black uppercase tracking-widest hover:bg-red-600"
+>
+  Enter Tournament
+</a>
 
-            <a className="rounded border border-zinc-600 px-8 py-4 font-black uppercase tracking-widest hover:border-white">
-              View Rankings
-            </a>
+<a
+  href="/leaderboard"
+  className="rounded border border-zinc-600 px-8 py-4 font-black uppercase tracking-widest hover:border-white"
+>
+  View Rankings
+</a>
           </div>
           <div className="mt-20 animate-bounce">
   <p className="mb-3 text-xs uppercase tracking-[0.4em] text-zinc-500">
