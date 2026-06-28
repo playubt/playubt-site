@@ -148,7 +148,7 @@ export default function Home() {
   </h2>
 
   <p className="mx-auto mt-4 max-w-xl text-sm leading-6 text-zinc-400">
-    Community voting opens Monday. Week One Tournament begins Thursday.
+    Community voting opens Monday. Tournament Episode airs on Sunday.
     Eight competitors. One champion. History starts now.
   </p>
 
