@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "PlayUTB",
-  description: "PlayUTB official league website",
+  title: "PlayUBT",
+  description: "PlayUBT official league website",
 };
 
 export default function RootLayout({
