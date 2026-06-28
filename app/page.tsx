@@ -153,7 +153,7 @@ export default function Home() {
   </p>
 
   <div className="mt-8 flex flex-wrap justify-center gap-4 text-sm font-bold uppercase tracking-widest">
-    <a href="#" className="border border-zinc-700 px-5 py-3 hover:border-red-600 hover:text-red-500">
+    <a href="https://x.com/PlayUBT" className="border border-zinc-700 px-5 py-3 hover:border-red-600 hover:text-red-500">
       X
     </a>
     <a href="#" className="border border-zinc-700 px-5 py-3 hover:border-red-600 hover:text-red-500">
