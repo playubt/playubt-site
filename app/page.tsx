@@ -156,21 +156,21 @@ export default function Home() {
     <a href="https://x.com/PlayUBT" className="border border-zinc-700 px-5 py-3 hover:border-red-600 hover:text-red-500">
       X
     </a>
-    <a href="#" className="border border-zinc-700 px-5 py-3 hover:border-red-600 hover:text-red-500">
+    <a href="https://www.youtube.com/@PlayUBT" className="border border-zinc-700 px-5 py-3 hover:border-red-600 hover:text-red-500">
       YouTube
     </a>
-    <a href="#" className="border border-zinc-700 px-5 py-3 hover:border-red-600 hover:text-red-500">
+    <a href="https://www.twitch.tv/playubt" className="border border-zinc-700 px-5 py-3 hover:border-red-600 hover:text-red-500">
       Twitch
     </a>
     <a
-  href="#"
+  href="https://www.tiktok.com/@playubt"
   className="border border-zinc-700 px-5 py-3 hover:border-red-600 hover:text-red-500"
 >
   TikTok
 </a>
 
 <a
-  href="#"
+  href="https://www.instagram.com/playubt/"
   className="border border-zinc-700 px-5 py-3 hover:border-red-600 hover:text-red-500"
 >
   Instagram
