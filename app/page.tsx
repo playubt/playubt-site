@@ -138,7 +138,7 @@ export default function Home() {
   </h2>
 
   <p className="mx-auto mt-6 max-w-2xl text-zinc-300">
-    The first eight competitors will be chosen by the community. One will become
+    The first eight competitors will be chosen by the community. <br />One will become
     the first champion in UBT history.
   </p>
 </section>
