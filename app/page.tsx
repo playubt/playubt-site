@@ -149,7 +149,7 @@ export default function Home() {
 
   <p className="mx-auto mt-4 max-w-xl text-sm leading-6 text-zinc-400">
     Community voting opens Monday. Tournament Episode airs on Sunday.
-    Eight competitors. One champion. History starts now.
+    <br />Eight competitors. One champion. History starts now.
   </p>
 
   <div className="mt-8 flex flex-wrap justify-center gap-4 text-sm font-bold uppercase tracking-widest">
