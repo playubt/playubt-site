@@ -1,7 +1,6 @@
-import Navbar from "./components/Navbar";export default function Home() {
+export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white">
-      <Navbar />
       <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6 text-center">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(185,28,28,0.35),transparent_35%),linear-gradient(to_bottom,#020617,#000000)]" />
 
