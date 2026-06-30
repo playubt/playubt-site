@@ -34,7 +34,7 @@ export default async function LeaderboardPage() {
         </h1>
 
         <p className="mt-4 max-w-2xl text-zinc-400">
-          The top vote-getters earn a place in the next PlayUBT tournament.
+          The top vote-getters earn a place in the next UBT tournament.
         </p>
 
         <div className="mt-12 overflow-hidden border border-zinc-800 bg-zinc-950">

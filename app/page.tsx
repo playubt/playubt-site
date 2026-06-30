@@ -6,7 +6,7 @@ export default function Home() {
 
         <div className="relative z-10 max-w-5xl">
           <p className="mb-4 text-sm font-bold uppercase tracking-[0.45em] text-red-500">
-            Ultimate Battle Tournament
+            Ultimate Bracket Tournament
           </p>
 
           <h1 className="text-6xl font-black italic tracking-tight sm:text-8xl">
@@ -14,8 +14,11 @@ export default function Home() {
           </h1>
 
           <p className="mx-auto mt-6 max-w-2xl text-lg text-zinc-300">
-            The official home of weekly WWE 2K tournaments, rankings,
-            champions, match history, and UBT records.
+            A community-driven WWE 2K simulation tournament league featuring rankings, champions, match history, and UBT records.
+            <br />
+            <br />
+            <br />
+            PlayUBT is an independent fan project and is not affiliated with or endorsed by WWE, 2K, or Take-Two Interactive.
           </p>
 
           <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
@@ -23,14 +26,14 @@ export default function Home() {
   href="/vote"
   className="rounded border border-red-600 bg-red-700 px-8 py-4 font-black uppercase tracking-widest hover:bg-red-600"
 >
-  Enter Tournament
+  Weekly Community Voting
 </a>
 
 <a
   href="/leaderboard"
   className="rounded border border-zinc-600 px-8 py-4 font-black uppercase tracking-widest hover:border-white"
 >
-  View Rankings
+  View Voting Rankings
 </a>
           </div>
           <div className="mt-20 animate-bounce">
@@ -73,12 +76,13 @@ export default function Home() {
       How It Works
     </p>
 
-    <div className="mt-10 grid gap-6 md:grid-cols-4">
+    <div className="mt-10 grid gap-5 lg:grid-cols-5">
       {[
         ["01", "Community Votes", "Fans recommend the competitors for the weekly tournament."],
         ["02", "8 Enter", "Eight selected wrestlers enter a single-elimination bracket."],
-        ["03", "One Champion", "The winner leaves with the PlayUBT Championship."],
-        ["04", "History Continues", "Every tournament adds to the league’s official history."],
+        ["03", "Points Stack", "Round Wins accumulate points, 1,2 and then an additional 4 for the Tournament Win."],
+        ["04", "One Champion", "The winner leaves with the Weekly UBT Championship."],
+        ["05", "History Continues", "Every tournament win adds to the seasons point race to see who competes for the UBT Ultimate Championship."],
       ].map(([number, title, text]) => (
         <div key={number} className="border border-zinc-800 bg-zinc-950 p-6">
           <p className="text-4xl font-black text-red-600">{number}</p>
@@ -140,12 +144,11 @@ export default function Home() {
   </p>
 
   <h2 className="mt-6 text-5xl font-black italic uppercase sm:text-7xl">
-    Premieres Sunday July 5th
   </h2>
 
   <p className="mx-auto mt-6 max-w-2xl text-zinc-300">
     The first eight competitors will be chosen by the community. <br />One will become
-    the first champion in UBT history.
+    the first Ultimate Champion in UBT history.
   </p>
 </section>
 <footer className="border-t border-zinc-800 bg-black px-6 py-12 text-center">
@@ -185,6 +188,8 @@ export default function Home() {
 
   <p className="mt-10 text-xs uppercase tracking-[0.35em] text-zinc-600">
     © 2026 PlayUBT. Built for the community.
+    <br />
+   <br /> Ultimate Bracket Tournament (PlayUBT) is an independent fan project created using WWE 2K. PlayUBT is not affiliated with, endorsed by, or sponsored by WWE, 2K, or Take-Two Interactive. WWE and WWE 2K are trademarks of their respective owners.
   </p>
 </footer>
     </main>

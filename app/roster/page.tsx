@@ -28,7 +28,7 @@ export default async function RosterPage() {
         </h1>
 
         <p className="mt-4 max-w-2xl text-zinc-400">
-          Every active UBT competitor starts at 0-0. Records, titles, and
+          Every UBT competitor starts at 0-0. Records, titles, and
           tournament wins will update as league history is created.
         </p>
 
