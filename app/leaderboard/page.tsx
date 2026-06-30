@@ -3,7 +3,7 @@ import { supabase } from "../components/supabaseClient";
 export default async function LeaderboardPage() {
   const { data: superstars, error } = await supabase
     .from("superstars")
-    .select("id, name, wins, losses, votes(id)")
+    .select("id, name, wins, losses, image_url, votes(id)")
     .order("name");
 
   if (error) {
@@ -47,12 +47,22 @@ export default async function LeaderboardPage() {
                 #{index + 1}
               </p>
 
-              <div>
-                <h2 className="text-xl font-black uppercase">{star.name}</h2>
-                <p className="text-sm text-zinc-500">
-                  Record: {star.wins}-{star.losses}
-                </p>
-              </div>
+              <div className="flex items-center gap-4">
+  <div className="h-20 w-16 overflow-hidden rounded border border-zinc-700 bg-zinc-900">
+    <img
+      src={star.image_url}
+      alt={star.name}
+      className="h-full w-full object-cover"
+    />
+  </div>
+
+  <div>
+    <h2 className="text-xl font-black uppercase">{star.name}</h2>
+    <p className="text-sm text-zinc-500">
+      Record: {star.wins}-{star.losses}
+    </p>
+  </div>
+</div>
 
               <p className="text-right text-2xl font-black">
                 {star.vote_count}

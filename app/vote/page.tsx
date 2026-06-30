@@ -27,7 +27,7 @@ export default async function VotePage() {
         </h1>
 
         <p className="mt-4 max-w-2xl text-zinc-400">
-          Choose who you want to see compete in the next PlayUBT tournament.
+          Choose who you want to see compete in the next UBT tournament.
           The top vote-getters enter the bracket.
         </p>
 
@@ -37,14 +37,22 @@ export default async function VotePage() {
               key={star.id}
               className="border border-zinc-800 bg-zinc-950 p-5"
             >
-              <div className="flex aspect-[4/3] items-center justify-center bg-gradient-to-br from-zinc-900 to-black">
-                <p className="text-5xl font-black text-zinc-800">
-                  {star.name
-                    .split(" ")
-                    .map((word: string) => word[0])
-                    .join("")}
-                </p>
-              </div>
+              <div className="flex aspect-[4/3] items-center justify-center overflow-hidden bg-gradient-to-br from-zinc-900 to-black">
+  {star.image_url ? (
+    <img
+  src={star.image_url}
+  alt={star.name}
+  className="h-full w-full object-contain drop-shadow-[0_0_12px_rgba(185,28,28,0.35)]"
+/>
+  ) : (
+    <p className="text-5xl font-black text-zinc-800">
+      {star.name
+        .split(" ")
+        .map((word: string) => word[0])
+        .join("")}
+    </p>
+  )}
+</div>
 
               <h2 className="mt-5 text-xl font-black uppercase">{star.name}</h2>
 

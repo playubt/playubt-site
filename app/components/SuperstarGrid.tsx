@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 
 export default function SuperstarGrid({ superstars }: { superstars: any[] }) {
@@ -27,18 +28,27 @@ export default function SuperstarGrid({ superstars }: { superstars: any[] }) {
 
       <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {filteredSuperstars.map((star) => (
-          <div
-            key={star.id}
-            className="group overflow-hidden border border-zinc-800 bg-zinc-950 transition hover:border-red-600"
-          >
-            <div className="flex aspect-[4/3] items-center justify-center bg-gradient-to-br from-zinc-900 to-black">
-              <p className="text-5xl font-black text-zinc-800">
-                {star.name
-                  .split(" ")
-                  .map((word: string) => word[0])
-                  .join("")}
-              </p>
-            </div>
+          <Link
+  key={star.id}
+  href={`/superstars/${star.name.toLowerCase().replaceAll(" ", "-").replaceAll("'", "")}`}
+  className="group overflow-hidden border border-zinc-800 bg-zinc-950 transition hover:border-red-600"
+>
+          <div className="flex aspect-[4/3] items-center justify-center overflow-hidden bg-gradient-to-br from-zinc-900 to-black">
+  {star.image_url ? (
+    <img
+      src={star.image_url}
+      alt={star.name}
+      className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
+    />
+  ) : (
+    <p className="text-5xl font-black text-zinc-800">
+      {star.name
+        .split(" ")
+        .map((word: string) => word[0])
+        .join("")}
+    </p>
+  )}
+</div>
 
             <div className="p-5">
               <h2 className="text-xl font-black uppercase">{star.name}</h2>
@@ -73,7 +83,7 @@ export default function SuperstarGrid({ superstars }: { superstars: any[] }) {
                 </div>
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </>

@@ -63,7 +63,7 @@ export default function Home() {
   <h2 className="mx-auto mt-6 max-w-4xl text-4xl font-black uppercase tracking-tight sm:text-6xl">
     The community decides who enters.
     <br />
-    The ring decides who survives.
+    The simulation decides who wins.
   </h2>
 </section>
 
